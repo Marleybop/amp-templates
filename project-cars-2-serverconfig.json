@@ -1,0 +1,235 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Basic:dns:1",
+        "Description": "Public name of the server as shown in the in-game browser.",
+        "Keywords": "name,title",
+        "FieldName": "name",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "name",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "AMP Project CARS 2 Server",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Password",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Basic:dns:1",
+        "Description": "Join password. Leave blank for an open server.",
+        "Keywords": "password,private",
+        "FieldName": "password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Basic:dns:1",
+        "Description": "Maximum number of players allowed on the server.",
+        "Keywords": "players,slots,max",
+        "FieldName": "maxPlayerCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "maxPlayerCount",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "22",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "VAC Secure",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Basic:dns:1",
+        "Description": "Enable VAC (Valve Anti-Cheat) for this server.",
+        "Keywords": "vac,secure,anticheat",
+        "FieldName": "secure",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "secure",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "Log Level",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Basic:dns:1",
+        "Description": "Verbosity of the server log output.",
+        "Keywords": "log,verbosity",
+        "FieldName": "logLevel",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "logLevel",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "info",
+        "EnumValues": {
+            "debug": "Debug",
+            "info": "Info",
+            "warning": "Warning",
+            "error": "Error"
+        }
+    },
+    {
+        "DisplayName": "Allow Empty Join",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Allow players to join when the server is empty.",
+        "Keywords": "empty,join",
+        "FieldName": "allowEmptyJoin",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "allowEmptyJoin",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "Server Controls Game Setup",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "If enabled, the server (not the host player) controls the race/session setup defined in sessionAttributes.",
+        "Keywords": "control,setup,session",
+        "FieldName": "controlGameSetup",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "controlGameSetup",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "Sports Play",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Enable stricter 'sports play' rules.",
+        "Keywords": "sports,rules",
+        "FieldName": "sportsPlay",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sportsPlay",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "Steam Port",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Network:lan:3",
+        "Description": "UDP Steam port. Must match the port assigned to this instance.",
+        "Keywords": "steam,port",
+        "FieldName": "steamPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "steamPort",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "8766",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Host Port (Game)",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Network:lan:3",
+        "Description": "UDP game/host port.",
+        "Keywords": "host,game,port",
+        "FieldName": "hostPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "hostPort",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "27015",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Query Port",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Network:lan:3",
+        "Description": "UDP Steam query port.",
+        "Keywords": "query,port",
+        "FieldName": "queryPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "queryPort",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "27016",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable HTTP API",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "HTTP API:http:4",
+        "Description": "Enable the HTTP remote-control/admin API.",
+        "Keywords": "http,api",
+        "FieldName": "enableHttpApi",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "enableHttpApi",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "HTTP API Port",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "HTTP API:http:4",
+        "Description": "TCP port for the HTTP API. Needs root if set below 1024.",
+        "Keywords": "http,api,port",
+        "FieldName": "httpApiPort",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "httpApiPort",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "9000",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Lua API",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "HTTP API:http:4",
+        "Description": "Enable the Lua scripting API / addons (sms_rotate, sms_motd, etc.).",
+        "Keywords": "lua,api,addons",
+        "FieldName": "enableLuaApi",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "enableLuaApi",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "True": "true",
+            "False": "false"
+        }
+    },
+    {
+        "DisplayName": "Events Log Size",
+        "Category": "Project CARS 2:directions_car",
+        "Subcategory": "Advanced:tune:5",
+        "Description": "Number of events retained in the in-memory events log.",
+        "Keywords": "log,events",
+        "FieldName": "eventsLogSize",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "eventsLogSize",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "10000",
+        "EnumValues": {}
+    }
+]
