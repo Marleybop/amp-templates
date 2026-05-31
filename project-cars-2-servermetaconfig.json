@@ -1,9 +1,3 @@
 [
-    {
-        "ConfigFile": "server.cfg",
-        "AutoMap": false,
-        "Importable": true,
-        "ConfigType": "ini",
-        "ConfigFormatRegex": "^(?<key>\\S+)\\s*:\\s*\"?(?<value>.*?)\"?\\s*$"
-    }
+
 ]
