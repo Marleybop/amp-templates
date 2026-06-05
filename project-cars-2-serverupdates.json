@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "UpdateStageName": "SteamCMD Server Download (optional - requires a Steam account that owns Project CARS 2)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "413770",
+        "UpdateSourceArgs": "378860",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Set Executable Flag",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "SetExecutableFlag",
+        "UpdateSourceArgs": "{{$FullBaseDir}}DedicatedServerCmd.elf",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "server.cfg Template Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/Marleybop/amp-templates/main/project-cars-2-server-template.cfg",
+        "UpdateSourceArgs": "AMP_server.cfg",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": false
+    }
+]

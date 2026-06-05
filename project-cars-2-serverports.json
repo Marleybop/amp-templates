@@ -1,23 +1,30 @@
 [
     {
         "Protocol": "UDP",
-        "Port": "27015",
-        "Name": "Main Game Port",
-        "Description": "Port used for main game traffic",
-        "Ref": "MainGamePort"
+        "Port": 27015,
+        "Ref": "GamePort",
+        "Name": "Game / Host Port",
+        "Description": "Main game/host traffic (server.cfg hostPort). Must be forwarded for players to join."
     },
     {
         "Protocol": "UDP",
-        "Port": "27016",
+        "Port": 27016,
+        "Ref": "QueryPort",
         "Name": "Steam Query Port",
-        "Description": "Port used for main game traffic",
-        "Ref": "SteamQueryPort"
+        "Description": "Steam server query (server.cfg queryPort). Must be forwarded for the server to appear in the browser."
     },
     {
         "Protocol": "UDP",
-        "Port": "8766",
-        "Name": "",
-        "Description": "Port used for main game traffic",
-        "Ref": ""
+        "Port": 8766,
+        "Ref": "SteamPort",
+        "Name": "Steam Port",
+        "Description": "Steam communication (server.cfg steamPort). Must be forwarded for players to join."
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 9000,
+        "Ref": "HttpApiPort",
+        "Name": "HTTP API Port",
+        "Description": "HTTP/JSON admin API and web UI (server.cfg httpApiPort). Admin only - do NOT forward publicly."
     }
 ]

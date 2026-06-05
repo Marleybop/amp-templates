@@ -1,10 +1,11 @@
 {
     "id": "b19a925c-ab69-496b-9144-27b89c40eb5d",
     "authors": [
-        "Marleybop - Made with AMP Config Generator"
+        "Marleybop"
     ],
-    "origin": "https://github.com/Marleybop - Made with AMP Config Generator/AMPTemplates.git",
-    "url": "https://github.com/Marleybop - Made with AMP Config Generator/AMPTemplates",
+    "origin": "https://github.com/Marleybop/amp-templates.git",
+    "url": "https://github.com/Marleybop/amp-templates",
     "imagefile": "",
-    "prefix": "Marleybop - Made with AMP Config Generator"
+    "prefix": "",
+    "repotype": "AppTemplates"
 }
